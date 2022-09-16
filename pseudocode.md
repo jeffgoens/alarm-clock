@@ -39,7 +39,7 @@ input
 ### FUNCTION:
  
 ```js
-Function showTime: (changed to showClockTime)
+Function showTime(): (changed to showClockTime)
   Date()
   currentTime
 
@@ -51,7 +51,7 @@ Function setAlarm();
   input value
 
 
-Function alarmAlert();
+Function alarmAlert(); (used alert method)
   output value
 
   
