@@ -3,17 +3,45 @@ body {
     text-align: center;
 }
 
-h2 {
-    font-size: 75px;
-    color: black;
-    margin: 5px;
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid; */
+    /* border-radius: 5px; */
+    /* max-width: 40vw; */
 }
 
-button {
-    color: black;
-    margin: 10px;
-    padding: 5px 10px;
+#clock {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+
+input {
     border-radius: 5px;
+    min-height: 2vw;
+    min-width: 8vw;
+    font-size: 1vw;
+}
+
+.controls {
+    margin-top: 16px
+}
+
+.button {
+    border-radius: 5px;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px;
     cursor: pointer;
 }
 
+.set-alarm {
+    background-color: green;
+}
+
+.clear-alarm {
+    background-color: red;
+}
