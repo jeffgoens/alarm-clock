@@ -25,7 +25,7 @@ function setAlarm() {
 
         if (timeToAlarm > current) {
             const timeout = timeToAlarm.getTime() - current.getTime();
-            alarmTimeout = setTimeout(() => timeout);
+            alarmTimeout = setTimeout(() => alert('Wake up Roger!! Roger...wake up!! Are you sleeping or has Zoom frozen??'), timeout);
             alert('Alarm set');
         }
     }
