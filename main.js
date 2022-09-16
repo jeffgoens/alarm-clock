@@ -3,6 +3,8 @@ let currentTime;
 let alarmTime = null;
 let alarmTimeout = null;
 
+// captures and creates current time
+
 function showClockTime() {
     let now = new Date();
     currentTime = now.toLocaleTimeString();
@@ -14,9 +16,13 @@ function showClockTime() {
 
 showClockTime();
 
+// captures and creates the time a user wants the alarm to sound
+
 function setAlarmTime(value) {
     alarmTime = value;
 }
+
+// function that creates the alarm event and provides an alert
 
 function setAlarm() {
     if(alarmTime) {
@@ -30,6 +36,8 @@ function setAlarm() {
         }
     }
 }
+
+// function that clears the alarm event
 
 function clearAlarm() {
     if (alarmTimeout) {
