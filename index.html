@@ -10,25 +10,15 @@
 </head>
 
 <body>
-    <div class = "container">
-        <h2 id = "timer"></h1>
-
-        <select id = "hours"></select>
-        <select id = "minutes"></select>
-        <select id = "seconds"></select>
-        <select id = "ampm">
-            <option value = "AM">AM</option>
-            <option value = "PM">PM</option> 
-        </select>
-        
-        <div>
-            <button id = "startstop">Set Alarm</button>
+    <section class = "container">
+        <div id = "clock"></div>
+        <input onchange = "setAlarmTime(this.value)" name = "alarmTime" type = "datetime-local">
+        <div class = "controls">
+            <button onclick = "setAlarm()" class = "button set-alarm">Set Alarm</button>
+            <button onclick = "clearAlarm()" class = "button clear-alarm">Clear Alarm</button>
         </div>
+    </section>    
         
-    </div>
-    
-
-
 
     <script src="main.js" defer></script>
 
