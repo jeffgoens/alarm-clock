@@ -39,15 +39,15 @@ input
 ### FUNCTION:
  
 ```js
-FUNCTION showTime: (changed to showClockTime)
+Function showTime: (changed to showClockTime)
   Date()
   currentTime
 
-Function setAlarmTime ();
+Function setAlarmTime();
   input value
 
         
-FUNCTION setAlarm();
+Function setAlarm();
   input value
 
 
@@ -55,7 +55,7 @@ Function alarmAlert();
   output value
 
   
-FUNCTION clearAlarm():
+Function clearAlarm():
   input value
  
 ```
